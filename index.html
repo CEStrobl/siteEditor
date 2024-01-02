@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Site Editor</title>
+</head>
+
+<body>
+	<div class="line-block">
+
+		<div class="line">
+			<h1>Mode Options</h1>
+			<input checked="true" name="modes" type="radio" onclick='hideOptions()' class = "checkmark"></input> <div class="txt">View</div>
+			<br>
+			<input name="modes" type="radio" onclick='showOptions()' class = "checkmark"></input><div class="txt">Editor</div>
+			
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="section">
+			<div id="op1" class="column a">
+				<h1>Title Options</h1>
+				<div class="txt">
+					<input checked="true" type="radio" name="title" onclick='updateImg("titleimg", "title-a")' class = "checkmark">Centered <br>(with corner)</input>
+				</div>
+				
+				<br>
+				<div class="txt">
+					<input type="radio" name="title" onclick='updateImg("titleimg", "title-b")' class="checkmark">Left Simple <br>(with corner)</input>
+				</div>
+
+				<br>
+				<div class="txt">
+					<input type="radio" name="title" onclick='updateImg("titleimg", "title-c")' class = "checkmark">Centered <br>(no corner)</input>
+				</div>
+				
+				<br>
+				<div class="txt">
+					<input type="radio" name="title" onclick='updateImg("titleimg", "title-d")' class="checkmark">Left Simple <br>(no corner)</input>
+				</div>
+			</div>
+			<div class="column b">
+				<img id="titleimg" src="img/title-a.png" alt="">
+			</div>
+
+		</div>
+
+		<div class="section">
+			<div id="op2" class="column a">
+				<h1>Body 1 Options</h1>
+				<div class="txt">
+					<input checked="true" type="radio" name="body1" onclick="updateImg('body1img', 'body1-a')" class="checkmark" >No Description</input>
+				</div>
+				<br>
+				<div class="txt">
+					<input  type="radio" name="body1" onclick="updateImg('body1img', 'body1-b')" class="checkmark" >With Description</input>
+				</div>
+			</div>
+			<div class="column b">
+				<img id="body1img" src="img/body1-a.png" alt="">
+			</div>
+		</div>
+
+		<div class="section">
+			<div id="op3" class="column a">
+				<h1>Body 2 Options</h1>
+				<div class="txt">
+					<input checked="true" type="radio" name="body2" onclick="updateImg('body2img', 'body2-a')" class="checkmark" >Centered Text</input>
+				</div>
+				<br>
+				<div class="txt">
+				<input type="radio" name="body2" onclick="updateImg('body2img', 'body2-b')" class="checkmark" >Left Aligned with Description</input>
+				</div>
+			</div>
+			<div class="column b">
+				<img id="body2img" src="img/body2-a.png" alt="">
+			</div>
+		</div>
+
+		<div class="section">
+			<div id="op4" class="column a">
+				<h1>Body 3 Options</h1>
+				<div class="txt">
+					<input checked="true" type="radio" name="body3" onclick="updateImg('body3img', 'body3-a')" class="checkmark" >Centered</input>
+				</div>
+				<br>
+				<div class="txt">
+					<input type="radio" name="body3" onclick="updateImg('body3img', 'body3-b')" class="checkmark" >Simplistic</input>
+				</div>
+				<br>
+				<div class="txt">
+					<input type="radio" name="body3" onclick="updateImg('body3img', 'body3-c')" class="checkmark" >Arrows</input>
+				</div>
+			</div>
+			<div class="column b">
+				<img id="body3img" src="img/body3-a.png" alt="">
+			</div>
+		</div>
+
+		<div class="section">
+			<div id="op5" class="column a">
+				<h1>Footer Options</h1>
+				<div class="txt">
+					<input checked="true" type="radio" name="footer" onclick="updateImg('footerimg', 'footer-a')" class="checkmark" >Description</input>
+				</div>
+				<br>
+				<div class="txt">
+					<input type="radio" name="footer" onclick="updateImg('footerimg', 'footer-b')" class="checkmark" >Simplistic</input>
+				</div>
+			</div>
+			<div class="column b">
+				<img id="footerimg" src="img/footer-a.png" alt="">
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+<script src="script2.js"></script>
+
+</html>
